@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"> </script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Jose</span><br> From Nicaragua</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/black.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>With a diverse skill set spanning JavaScript, HTML, CSS, WordPress, Python, React JS, and front-end development, I am your ultimate tech powerhouse. I create captivating user experiences, craft stunning interfaces, and build dynamic applications. Let me bring your visions to life and exceed your expectations with my expertise and passion.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Focused on front end</li>
+                        <li><span>IT Specialist</span><br>Windows server and networking </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Web developer freelancer for specific clients</li>
+                        <li><span>2022</span><br>BAY Network Solution - Junior IT Specialist</li>
+                        <li><span>2019 - 2022</span><br>Web developer for school platforms</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>Highschool from Notre Dame School</li>
+                        <li><span>2019</span><br>CS50 Harvard University</li>
+                        <li><span>2019-2023</span><br>BS. Sofware Engineering Keiser University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>My strenght is front end developmet based on js, html, css, and wordpress</p>
+                <a href=https://github.com/jose314>Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>I have did designed programs grocery stores and schools</p>
+                <a href=https://github.com/jose314>Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I have designed applications for the Nicaraguan National Hackaton based on education</p>
+                <a href=https://github.com/jose314>Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/js4.png">
+                <div class="layer">
+                    <h3>Dice game</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/js2.png">
+                <div class="layer">
+                    <h3>School Page</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/js5.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="center">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> xepe199@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +505 7798-3583</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jose-rodriguez-2aa5ba216/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/JoseRodriguez CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+           
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+</body>
+</html>
